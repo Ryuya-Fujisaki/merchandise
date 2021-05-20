@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>アダプティブレイアウトの作成</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/jquery.bxslider.css">
+<style>
+html,body {
+margin: 0;
+padding: 0;
+}  
+header {
+margin: 0;
+padding: 20px;
+text-align: center;
+background-color: #ffa500;
+color: #fff;
+font-family: 'RocknRoll One', sans-serif;
+}
+.wrapper {
+width: 1100px;
+margin: 30px auto 40px;
+/* background-color: crimson; */
+overflow: hidden;
+}
+.box {
+width: 200px;
+height: 200px;
+background-color: #000;
+float: left;
+margin: 10px;
+}
+.box:nth-child(1) {
+width: 420px;
+height: 420px;
+color: #fff;
+font-size: 30px;
+/* background: url(../img/stool.jpg); */
+}
+.box:nth-child(2) {
+width: 400px;
+height: 200px;
+/* background: url(../img/torso.jpg); */
+margin-left: 10px;
+}
+.box:nth-child(3) {
+width: 200px;
+height: 200px;
+/* background: url(../img/dressordesk.jpg); */
+margin-left: 30px;
+}
+.box:nth-child(4) {
+width: 200px;
+height: 200px;
+/* background: url(../img/dustbox.jpg); */
+}
+.box:nth-child(5) {
+width: 200px;
+height: 200px;
+/* background: url(../img/racingchair.jpg); */
+}
+.box:nth-child(6) {
+width: 200px;
+height: 200px;
+/* background: url(../img/lug.jpg); */
+}
+ul{
+list-style: none;
+}
+.bxslider{
+margin-left: calc(30% - 850px);
+}
+@media (max-width:900px){
+.bxslider{
+margin-left: 20px;
+}
+</style>
+</head>
+<body>
+<p><a href="../index.html">ホームへ戻る</a></p>
+<header>
+<h1>商品紹介</h1>
+<p>インテリアのTakeo-Shop</br>
+今なら全商品ポイント5倍！</p>
+</header>
+<div class="carousel-1">
+<ul class="bxslider">
+<li><a href="https://search.rakuten.co.jp/search/mall/ast-rcc-1175/?sid=253719"><img src="../img/hondana.jpg" alt = ""></a></li>
+<li><a href="https://search.rakuten.co.jp/search/mall/sg-10163-1-24/?sid=253719"><img src="../img/warakumo.gif" alt = ""></a></li>
+<li><a href="https://search.rakuten.co.jp/search/mall/fb-14102-4/?sid=253719" alt = ""></a></li>    
+<li><a href="" alt = ""></a></li>
+<li><a href="https://search.rakuten.co.jp/search/mall/so-sh-07-cds/?sid=253719"><img src="../img/cdsf.jpg" alt = ""></a></li>
+<li><a href="https://search.rakuten.co.jp/search/mall/fb-84055-56-57-84292-93/?sid=253719"><img src="../img/slim.jpg" alt = ""></a></li>
+<li><a href="https://search.rakuten.co.jp/search/mall/tm-wuwan-2171-2/?sid=253719"><img src="../img/RISU.jpg" alt = ""></a></li>
+<li><a href="https://search.rakuten.co.jp/search/mall/uni-0002/?sid=253719"><img src="../img/din3.jpg" alt = ""></a></li>
+<li><a href="https://search.rakuten.co.jp/search/mall/jkp-FWD-0001SET/?sid=253719"><img src="../img/twindesk.jpg" alt = ""></a></li>
+<li><a href="https://search.rakuten.co.jp/search/mall/%09ast-rd-1125/?sid=253719"><img src="../img/dressor.jpg" alt = ""></a></li>
+</ul>
+</div><!-- carousel-1 -->
+
+<ul class="bxslider2">
+<li><a href="https://store.shopping.yahoo.co.jp/takeoshop/pt-dc-604.html"><img src="../img/thechair.gif" alt=""></a></li>
+<li><a href="https://store.shopping.yahoo.co.jp/takeoshop/fb-98710-2.html"><img src="../img/fb98710-2.jpg" alt=""></a></li>
+<li><a href="https://store.shopping.yahoo.co.jp/takeoshop/search.html?p=%E3%83%A9%E3%82%B0&X=99#CentSrchFilter1"><img src="../img/ragubana.jpg" alt=""></a></li>
+<li><a href="https://store.shopping.yahoo.co.jp/takeoshop/sg-10163-1-24.html"><img src="../img/kumlo.gif" alt=""></a></li>
+<li><a href="https://store.shopping.yahoo.co.jp/takeoshop/sg-10255.html"><img src="../img/sugob.gif" alt=""></a></li>
+<li><a href="https://store.shopping.yahoo.co.jp/takeoshop/so-sh-07-fbc.html"><img src="../img/maggy.gif" alt=""></a></li>
+</ul><!-- .bxslider2 -->
+
+<div class="wrapper">
+  <div class="box"><a href="https://search.rakuten.co.jp/search/mall/01%EF%BC%8Dmonica/?l-id=s_search&l2-id=shop_header_search"><img src="../img/stool.jpg" alt=""></a></div>
+  <div class="box"><a href="https://search.rakuten.co.jp/search/mall/torso+corpo/"><img src="../img/torso.jpg" alt=""></a></div>
+  <div class="box"><a href="https://store.shopping.yahoo.co.jp/drevers/pnd01.html?sc_i=shp_pc_search_itemlist_shsrg_title"><img src="../img/dressordesk.jpg" alt=""></a></div>
+  <div class="box"><a href="https://store.shopping.yahoo.co.jp/takeoshop/so-sh-01-ecng45.html?sc_i=shp_pc_search_hisltcf_3"><img src="../img/dustbox.jpg" alt=""></a></div>
+  <div class="box"><a href="https://store.shopping.yahoo.co.jp/takeoshop/sb-h-013.html?sc_i=shp_pc_search_hisltcf_3"><img src="../img/racingchair.jpg" alt=""></a></div>
+  <div class="box"><a href="https://store.shopping.yahoo.co.jp/takeoshop/tko-gs-701038.html"><img src="../img/lug.jpg" alt=""></a></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../js/jquery.bxslider.js"></script>
+<script>
+$(function(){
+$('.bxslider').bxSlider({
+speed: 500,
+minSlides: 1,
+maxSlides: 10,
+moveSlides: 1,
+slideWidth: 600,
+slideMargin: 20,
+auto: true,
+pause: 3000,
+control: false
+});   
+
+
+
+$('.bxslider2').bxSlider({
+speed: 40000,
+minSlides: 1,
+maxSlides: 8,
+slideWidth: 300,
+slideMargin: 10,
+control: false,
+ticker: true,
+easing: 'linear',
+pause: 0
+}); 
+
+
+
+}); /*全ては「{}カールブランケットの中に含まれる*/
+    /*$(function())はdocumentreadyfunctionの省略形*/
+</script>  
+</div><!-- wrapper -->
+</body>
+</html>
